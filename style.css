@@ -1,0 +1,62 @@
+
+.board
+{
+    display:flex;
+    flex-direction:column;
+   width:500px;
+   height:500px;
+    
+}
+.row
+{
+    flex-grow: 1;
+    display: flex;
+}
+.box
+{
+    border: 1px solid #f0f0f0;
+    flex-grow: 1;
+    
+}
+
+
+.header
+{
+    padding:20px 0;
+    font-size: xx-large;
+}
+body
+{
+
+    text-align: center;
+    font-family: cursive;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+}
+
+.content
+{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.container
+{
+    display:flex;
+    gap:50px;
+    
+}
+
+.functionality
+{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    padding-top:40px;
+}
+
+.footer
+{
+    padding:20px 0;
+}

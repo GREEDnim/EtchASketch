@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a Sketch</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <div >ETCH A SKETCH</div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+
+            <section class="functionality">
+                <div class="grid-input">
+                    <p>GRID SIZE : <span class="gsize">50</span></p>
+                    <input id="grid-size" type="range" min="1" max="100" value="50">
+                    
+                </div>
+                <div class="color-input">
+                    <sp>COLOR </p>
+                    <input type="color"  id="color-input" value="#000000">
+                </div>
+    
+                <div class="random-color">
+                    <p>RANDOM COLOR</p>
+                    <button id="random-color">RANDOM</button>
+                </div>
+    
+                <div class="clear">
+                    <p>CLEAR</p>
+                    <button id="clear-color">CLEAR</button>
+                </div>
+            </section>
+    
+    
+            <section class="board">
+            </section>
+    
+        </div>
+    </section>
+    
+    <section class="footer">
+        <div>
+            ODIN PROJECT 2022
+        </div> 
+    </section>
+</body>
+</html>
