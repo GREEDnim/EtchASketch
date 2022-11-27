@@ -1,12 +1,9 @@
 
-
-
 function addGrid(event) {
     sizetext = document.querySelector(".gsize");
     let board = document.querySelector('.board');
     max = this.value || 50;
     sizetext.innerText = `${max}`;
-    // console.log(max);
     board.textContent = '';
     for (let row = 1; row <= max; row++) {
         rowBoard = document.createElement('div');
@@ -16,7 +13,6 @@ function addGrid(event) {
 
             box = document.createElement('div');
             box.classList.add("box");
-            box.addEventListener('mouseover', addColor);
             rowBoard.appendChild(box);
         }
         board.appendChild(rowBoard);
@@ -49,9 +45,30 @@ function addColor(event) {
 }
 function removeColor() {
     boxElements = document.querySelectorAll(".box");
-    boxElements.forEach((box) => { box.style.backgroundColor = "blanchedalmond"; })
+    boxElements.forEach((box) => { box.style.backgroundColor = " rgb(241, 195, 126)"; })
 }
 
+function addOrRemoveHover(event)
+{
+    boxElements = document.querySelectorAll(".box");
+    if(event.key==" ")
+    {
+    boxElements.forEach((box)=>{addHover(box)})
+    }
+    if(event.key=="x")
+    {
+        boxElements.forEach((box)=>{removeHover(box)})
+    }
+
+}
+function addHover(box)
+{
+    box.addEventListener('mouseover', addColor);
+}
+function removeHover(box)
+{
+    box.removeEventListener('mouseover', addColor);
+}
 
 
 
@@ -70,3 +87,4 @@ gridSize.addEventListener('input', addGrid);
 rand.addEventListener('click', () => { random = true; })
 colorele.addEventListener('input', changeColor);
 clearColorele.addEventListener('click', removeColor);
+document.addEventListener('keydown',addOrRemoveHover);

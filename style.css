@@ -30,7 +30,7 @@ body
 
     text-align: center;
     font-family: cursive;
-    background-color: blanchedalmond;
+    background-color: rgb(241, 195, 126);
     display: flex;
     flex-direction: column;
 }
@@ -59,4 +59,9 @@ body
 .footer
 {
     padding:20px 0;
+}
+img
+{
+    width:auto;
+    height:200px;
 }
